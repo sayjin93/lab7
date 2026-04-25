@@ -4,7 +4,6 @@ const dotenv = require('dotenv').config();
 
 const {errorHandler}= require('./middlewares/errorMiddleware');
 
-//Krijojme nje varaibel per porten
 const port = process.env.PORT || 5000;
 
 //Inicializojme expreessin ne nje variabel app
