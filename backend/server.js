@@ -1,10 +1,14 @@
 // Importojme dependencies
 const express = require('express');
 const dotenv = require('dotenv').config();
+const connectDB = require('./connect/database');
 
 const {errorHandler}= require('./middlewares/errorMiddleware');
 
 const port = process.env.PORT || 5000;
+
+//Lidhemi me db e mongos
+connectDB();
 
 //Inicializojme expreessin ne nje variabel app
 const app = express();
